@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         val sound1: MediaPlayer = MediaPlayer.create(this, raw.epic)
 
 
-        toggleFlashLightOnOff.setOnCheckedChangeListener { compoundButton, onSwitch ->
+        toggleFlashLightOnOff.setOnCheckedChangeListener { _, onSwitch ->
             if (onSwitch) {
                 try {
                     cameraManager!!.setTorchMode(getCameraID!!, true)
