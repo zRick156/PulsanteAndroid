@@ -56,8 +56,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnRickRoll.setOnClickListener {
-            val intent =
-                Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=uHgt8giw1LY"))
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=uHgt8giw1LY"))
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             intent.setPackage("com.google.android.youtube")
             startActivity(intent)
