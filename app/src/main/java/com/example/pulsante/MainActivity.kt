@@ -7,15 +7,11 @@ import android.hardware.camera2.CameraManager
 import android.media.MediaPlayer
 import android.net.Uri
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.CompoundButton
-import android.widget.Switch
-import android.widget.ToggleButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import com.example.pulsante.R.*
-import com.google.android.material.switchmaterial.SwitchMaterial
 
 class MainActivity : AppCompatActivity() {
     private var cameraManager: CameraManager? = null
@@ -27,8 +23,6 @@ class MainActivity : AppCompatActivity() {
 
 
         val toggleFlashLightOnOff: CompoundButton = findViewById(id.swBackground)
-
-
 
         cameraManager = getSystemService(Context.CAMERA_SERVICE) as CameraManager
         try {
@@ -75,13 +69,5 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-
-        fun toggleFlashLight() {
-            if (toggleFlashLightOnOff!!.isChecked) {
-
-            } else {
-
-            }
-        }
     }
 }
